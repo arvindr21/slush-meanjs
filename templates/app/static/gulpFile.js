@@ -12,7 +12,7 @@ var rename = require('gulp-rename');
 var mocha = require('gulp-mocha');
 var karma = require('gulp-karma');
 
-var applicationJavaScriptFiles, 
+var applicationJavaScriptFiles,
     applicationCSSFiles,
     applicationTestFiles;
 
@@ -48,7 +48,7 @@ gulp.task('cssmin', function () {
      .pipe(concat('application.css'))
      .pipe(minifyCSS())
      .pipe(rename('application.min.css'))
-     .pipe(gulp.dest('public/dist')); 
+     .pipe(gulp.dest('public/dist'));
 });
 
 gulp.task('mochaTest', function () {
@@ -74,7 +74,7 @@ gulp.task('watch', function() {
   gulp.watch(['gulpFile.js', 'server.js', 'config/**/*.js', 'app/**/*.js', 'public/js/**/*.js', 'public/modules/**/*.js'], ['jshint']);
   gulp.watch(['public/**/css/*.css'], ['csslint']);
 
-  gulp.watch(['gruntfile.js', 'server.js', 'config/**/*.js', 'app/**/*.js', 'public/modules/**/views/*.html', 'public/js/**/*.js', 'public/modules/**/*.js', 'public/**/css/*.css']).on('change', function(file) {
+  gulp.watch(['gulpFile.js', 'server.js', 'config/**/*.js', 'app/**/*.js', 'public/modules/**/views/*.html', 'public/js/**/*.js', 'public/modules/**/*.js', 'public/**/css/*.css']).on('change', function(file) {
       server.changed(file.path);
   });
 });
