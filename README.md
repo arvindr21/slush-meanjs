@@ -4,6 +4,8 @@
 
 > A slush generator to scaffold MEAN Apps
 
+## * * This project is no longer under active maintenance, if anyone is interested to manage this, please reach out to me. * *
+
 Inspired by [MEAN](http://meanjs.org/)
 
 ## Getting Started
