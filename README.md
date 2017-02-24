@@ -75,7 +75,7 @@ $ gulp test
 <td>slush meanjs</td>
 </tr>
 <tr>
-<td><a href="#crud-module-sub-generato">CRUD Module sub-generator</a></td>
+<td><a href="#crud-module-sub-generator">CRUD Module sub-generator</a></td>
 <td>slush meanjs:crud-module {{module-name}}</td>
 </tr>
 <tr>
